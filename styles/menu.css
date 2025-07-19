@@ -1,0 +1,223 @@
+.menu-body{
+height: 100%;
+max-width: 100%;
+padding: 0;
+box-sizing: border-box;
+}
+.grid-wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+}
+.menu-body-title{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+.menu-body-grid {
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 75px;
+  width: 100%;
+}
+.menu-body-grid-item {
+    position: relative;
+    background-image: url(/pics/wavy-background-180786598e741294f08ecaf1990ddc76.png);
+    display: flex;
+    flex-direction: column;
+    background-color: #2e1908;
+    border: solid 2px #2e1908;                           
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.menu-body-grid-item:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.item-img {
+    height: 473px; 
+    overflow: hidden; 
+}
+
+
+
+.addtocart {
+    z-index: 2;
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    background-color: #f6efde;
+    color: #f7552f;
+    opacity: 0;
+    transition:opacity 0.18s, background-color 0.18s, color 0.18s;
+}
+
+
+
+
+
+.addtocart p{
+    margin: 0;
+    padding:15px 0 ;
+}
+.item-img img {
+    width: 100%;  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+}
+.item-info{
+    display: flex;
+    justify-content: center;
+    color: #f6efde;
+    font-size: 24px;
+}
+.item-info p{
+    margin-bottom: 5px;
+}
+.item-price{
+    display: flex;
+    justify-content: center;
+    color: #f6efde;
+    font-size: 24px;
+}
+.item-price p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.nutrition{
+    background-image: url(/pics/wavy-background-180786598e741294f08ecaf1990ddc76.png);
+    color: #f6efde;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #2e1908;
+    margin-top:100px;
+    margin-bottom: 20px;
+    margin-right: 450px;
+    margin-left: 450px;
+    font-size: 26px;
+    padding: 20px 55px;
+}
+.guidebutton{
+    background-image: url(/pics/wavy-background-180786598e741294f08ecaf1990ddc76.png);
+border: none;
+    color: #2e1908;
+    background-color: #f6efde;
+    border-radius: 50%;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+font-size: 18px;
+}
+.guidebutton:hover{
+    background-color:#f7552f;
+    color: #f6efde;
+}
+.guidelink{
+    border-radius: 50%;
+    width: 200px;
+    height: 80px;
+}
+
+@media (max-width:1500px){
+    .menu-body-grid{
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        column-gap: 100px;
+        row-gap: 150px;    
+        height: 100%;
+    }
+    .nutrition{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media (max-width:1100px){
+    .menu-body-grid{
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        column-gap: 125px;
+        row-gap: 150px;       
+        height: 100%;
+    }
+    .nutrition{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+@media (max-width:855px){
+    .menu-body-grid{
+        padding: 50px 200px;
+        display: grid;
+        grid-template-columns:  1fr;
+        width: 100%;
+        row-gap: 100px;       
+        height: 100%;
+    }
+    .nutrition{
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+}
+
+@media (max-width:750px){
+ .item-info,.item-price{
+        font-size: 20px;
+    }
+    .nutrition{
+        transform: scale(0.9);
+        margin-bottom: 70px;
+    }
+}
+@media (max-width:720px){
+    .menu-body-grid{
+        padding: 50px 180px;
+        display: grid;
+        grid-template-columns:  1fr;
+        width: 100%;
+        row-gap: 100px;       
+        height: 100%;
+    }
+}
+@media (max-width:655px){
+    .menu-body-title{
+        margin-top: 20px;
+        font-size: 38px;
+    }
+    .menu-body-grid{
+        padding: 50px 100px;
+        display: grid;
+        grid-template-columns:  1fr;
+        width: 100%;
+        row-gap: 75px;       
+        height: 100%;
+    }
+    .nutrition{
+        transform: scale(0.8);
+        margin-right: 50px ;
+        margin-left: 50px;
+    }
+}
